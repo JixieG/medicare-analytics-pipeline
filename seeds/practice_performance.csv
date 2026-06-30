@@ -1,0 +1,16 @@
+practice_id,practice_name,region,month,collections_amount,ssu_rate,total_patients,phreesia_payments
+P001,Sunrise Medical,Northeast,2024-01-01,125000,0.82,450,98000
+P002,Green Valley Clinic,Southeast,2024-01-01,98000,0.74,320,71000
+P003,Blue Ridge Health,Midwest,2024-01-01,210000,0.91,780,195000
+P004,Coastal Care,West,2024-01-01,67000,0.65,210,42000
+P005,Metro Health Group,Northeast,2024-01-01,315000,0.88,1100,280000
+P001,Sunrise Medical,Northeast,2024-02-01,132000,0.84,470,105000
+P002,Green Valley Clinic,Southeast,2024-02-01,91000,0.71,300,65000
+P003,Blue Ridge Health,Midwest,2024-02-01,225000,0.93,820,210000
+P004,Coastal Care,West,2024-02-01,72000,0.68,230,48000
+P005,Metro Health Group,Northeast,2024-02-01,328000,0.90,1150,295000
+P001,Sunrise Medical,Northeast,2024-03-01,118000,0.79,430,91000
+P002,Green Valley Clinic,Southeast,2024-03-01,105000,0.76,340,78000
+P003,Blue Ridge Health,Midwest,2024-03-01,198000,0.89,750,182000
+P004,Coastal Care,West,2024-03-01,80000,0.72,250,55000
+P005,Metro Health Group,Northeast,2024-03-01,340000,0.91,1200,308000

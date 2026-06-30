@@ -1,0 +1,9 @@
+
+target/
+dbt_packages/
+logs/
+data/
+dev.duckdb
+target/
+dbt_packages/
+logs/

@@ -1,0 +1,33 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
+  - name: practice_monthly_performance
+    description: "Monthly performance metrics per practice"
+    columns:
+      - name: practice_id
+        description: "Unique practice identifier"
+        data_tests:
+          - not_null
+      - name: collections_amount
+        description: "Total collections for the month"
+        data_tests:
+          - not_null
+

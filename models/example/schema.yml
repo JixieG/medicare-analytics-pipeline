@@ -1,33 +1,36 @@
-
 version: 2
 
 models:
-  - name: my_first_dbt_model
-    description: "A starter dbt model"
+  - name: medicare_raw
+    description: "Raw Medicare physician and practitioner data - 100k rows"
     columns:
-      - name: id
-        description: "The primary key for this table"
-        data_tests:
-          - unique
-          - not_null
-
-  - name: my_second_dbt_model
-    description: "A starter dbt model"
-    columns:
-      - name: id
-        description: "The primary key for this table"
-        data_tests:
-          - unique
-          - not_null
-  - name: practice_monthly_performance
-    description: "Monthly performance metrics per practice"
-    columns:
-      - name: practice_id
-        description: "Unique practice identifier"
-        data_tests:
-          - not_null
-      - name: collections_amount
-        description: "Total collections for the month"
+      - name: '"Rndrng_NPI"'
+        description: "Unique provider identifier"
         data_tests:
           - not_null
 
+  - name: specialty_payments
+    description: "Medicare payments aggregated by medical specialty"
+    columns:
+      - name: specialty
+        description: "Medical specialty type"
+        data_tests:
+          - not_null
+          - unique
+      - name: avg_medicare_payment
+        description: "Average Medicare payment amount"
+        data_tests:
+          - not_null
+
+  - name: state_payments
+    description: "Medicare payments aggregated by state"
+    columns:
+      - name: state
+        description: "US state abbreviation"
+        data_tests:
+          - not_null
+          - unique
+      - name: total_medicare_payment
+        description: "Total Medicare payment amount"
+        data_tests:
+          - not_null

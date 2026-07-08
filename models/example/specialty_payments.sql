@@ -7,7 +7,8 @@ with base as (
         sum(cast("Tot_Srvcs" as float))        as total_services,
         sum(cast("Tot_Benes" as float))        as total_beneficiaries,
         round(avg(cast("Avg_Mdcr_Pymt_Amt" as float)), 2) as avg_medicare_payment
-    from MEDICARE_DB.DBT_LEARNING.MEDICARE_RAW
+    from {{ ref('medicare_raw') }}
+
     group by "Rndrng_Prvdr_Type"
 )
 
